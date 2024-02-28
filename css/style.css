@@ -101,9 +101,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    pointer-events: none;
    }
 
-h1 {
+  h1 {
   white-space: nowrap;
     color: #ad03fc;
     font: 2vw/1 'Poppins', sans-serif;
