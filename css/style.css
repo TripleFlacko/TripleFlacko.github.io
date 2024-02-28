@@ -95,13 +95,33 @@
      background-repeat: no-repeat;
    }
    
-
-   h1 {
-    color: #ad03fc;
+   .text {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font: 36px/1 'Poppins', sans-serif;
+   }
+
+h1 {
+  white-space: nowrap;
+    color: #ad03fc;
+    font: 2vw/1 'Poppins', sans-serif;
     user-select: none;
    }
+
+  @media screen and (max-width: 991px) {
+    h1 {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+  }
+  @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+  }
+  @media screen and (max-width: 479px) {
+    h1 {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+  }
